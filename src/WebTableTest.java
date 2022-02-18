@@ -15,11 +15,11 @@ public class WebTableTest {
 				
 		
 		int row  = driver.findElements(By.xpath("//div[@class='rt-tr-group']")).size();
-		System.out.println(row);
+		System.out.println("Number of ROWS: "+row);
 		
 		
 		int column = driver.findElements(By.xpath("//div[@class='rt-th rt-resizable-header -cursor-pointer']")).size();
-		System.out.println(column);
+		System.out.println("Number of Column "+column);
 
 		
 		for(int i=1;i<=row;i++) {
